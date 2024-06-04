@@ -1,0 +1,14 @@
+"""
+Simulation known as "Conway's Game of Life", 
+a cellular automaton devised by John Horton Conway in 1970. 
+We are going to build it with Python using Pygame.
+
+Rules:
+    - A live cell with two or fewer live neighbors dies.
+    - A live cell with three live neighbors lives.
+    - A live cell with more than three live neighbors dies.
+    - A dead cell with exactly three live neighbors becomes alive.
+
+Dependencies:
+    pip install pygame
+""" 
