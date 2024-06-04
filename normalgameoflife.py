@@ -22,6 +22,23 @@ import pygame
 import sys
 import random
 
+title = """
+ ▄▄ •  ▄▄▄· • ▌ ▄ ·. ▄▄▄ .          ·▄▄▄    ▄▄▌  ▪  ·▄▄▄▄▄▄ .
+▐█ ▀ ▪▐█ ▀█ ·██ ▐███▪▀▄.▀·    ▪     ▐▄▄·    ██•  ██ ▐▄▄·▀▄.▀·
+▄█ ▀█▄▄█▀▀█ ▐█ ▌▐▌▐█·▐▀▀▪▄     ▄█▀▄ ██▪     ██▪  ▐█·██▪ ▐▀▀▪▄
+▐█▄▪▐█▐█ ▪▐▌██ ██▌▐█▌▐█▄▄▌    ▐█▌.▐▌██▌.    ▐█▌▐▌▐█▌██▌.▐█▄▄▌
+·▀▀▀▀  ▀  ▀ ▀▀  █▪▀▀▀ ▀▀▀      ▀█▄▀▪▀▀▀     .▀▀▀ ▀▀▀▀▀▀  ▀▀▀ 
+
+"""
+
+controls = """
+* Spacebar: Pause/Unpause the simulation.
+* R Key: Randomly generate a new set of live cells.
+* C Key: Toggle slow simulation mode.
+* S Key: Toggle fast simulation mode.
+* Left Mouse Button: Click on the grid to toggle a cell between alive and dead.
+"""
+
 pygame.init()
 
 
@@ -91,6 +108,8 @@ def adjust_grid(positions):
 
 
 def main():
+    print(title)
+    print(controls)
     positions = set()  # each cell is unique
     running = True
     paused = False
