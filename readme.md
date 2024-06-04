@@ -1,4 +1,3 @@
-I apologize for the misunderstanding. Here's the text you provided transformed into Markdown format:
 
 ## Conway's Game of Life in Python with Pygame
 
@@ -64,6 +63,4 @@ The core functionality lies in the `adjust_grid` function. It iterates through a
 * A live cell with more than three live neighbors dies.
 * A dead cell with exactly three live neighbors becomes alive.
 
-The `main` function handles the game loop, user input, and visualization using Pygame.
 
-Feel free to modify the code to experiment with different grid sizes, cell sizes, or even introduce new rules for variations of the Game of Life.
