@@ -135,7 +135,7 @@ def main():
                 if event.key == pygame.K_SPACE:
                     paused = not paused
                 elif event.key == pygame.K_r:
-                    positions = gen(random.randrange(7, 9) * GRID_WIDTH)
+                    positions = gen(random.randrange(10,15) * GRID_WIDTH)
                 elif event.key == pygame.K_c:
                     slow_mode = not slow_mode
                 elif event.key == pygame.K_s:
